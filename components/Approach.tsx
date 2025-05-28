@@ -13,11 +13,9 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Planning & Test Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="I develop comprehensive test strategies aligned with project goals. This includes defining test scope, identifying risks, selecting appropriate testing techniques, and creating detailed test plans to ensure thorough coverage."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Test Automation Framework"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Once we agree on the plan, I design and implement robust test automation frameworks using industry-best practices. This involves selecting the right tools, creating reusable components, and setting up CI/CD pipelines for continuous testing and feedback."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +44,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Quality Assurance & Delivery"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="I lead the execution of test cases, analyze results, and provide detailed reports. I collaborate with developers to resolve issues, conduct performance testing, and ensure the delivery of high-quality software that meets all requirements and standards."
         >
           <CanvasRevealEffect
             animationSpeed={3}

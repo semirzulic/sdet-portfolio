@@ -1,9 +1,21 @@
 import React from "react";
 
 import { workExperience } from "@/data";
+import { FaDownload } from "react-icons/fa";
 import { Button } from "./ui/MovingBorders";
+import MagicButton from "./MagicButton";
 
 const Experience = () => {
+  const handleDownload = () => {
+    // Replace '/path-to-your-cv.pdf' with the actual path to your CV
+    const link = document.createElement("a");
+    link.href = "/Semir_Zulic_Resume.pdf";
+    link.download = "Semir_Zulic_Resume.pdf"; // Replace with your desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
@@ -46,6 +58,21 @@ const Experience = () => {
             </div>
           </Button>
         ))}
+        <div className="lg:col-span-4 flex flex-col items-center mt-16">
+          <p className="text-center text-white text-lg mb-6">
+            Want to know more about my professional journey and skills?
+            <br />
+            Download my comprehensive CV for a detailed look at my experience
+            and qualifications.
+          </p>
+          <MagicButton
+            title="Download My CV"
+            icon={<FaDownload />}
+            position="left"
+            handleClick={handleDownload}
+            otherClasses="!bg-[#161A31]"
+          />
+        </div>
       </div>
     </div>
   );

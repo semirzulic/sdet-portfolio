@@ -38,7 +38,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title:
+      "Quality assurance enthusiast with a passion for automating excellence.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +50,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title:
+      "Currently Implementing WCAG compliance checks in Microfrontend projects",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,35 +74,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Cross-Platform Automation Framework",
+    des: "Architected and developed a comprehensive automation solution for web and mobile applications, significantly improving testing efficiency and coverage.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "/automation-framework",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "CI/CD Pipeline Integration",
+    des: "Implemented and managed Git pipelines, integrating automated tests into CI/CD workflows for continuous quality assurance in a microfrontend architecture.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "/cicd-integration",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "WCAG Accessibility Testing Suite",
+    des: "Developed a comprehensive testing suite for WCAG accessibility standards, ensuring products meet critical accessibility requirements.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "/accessibility-testing",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Dynamic Drupal, Angular, NextJS and VueJS Websites",
+    des: "Developed and maintained dynamic websites using Drupal 7 & 8, Angular, NextJS and VueJS focusing on custom theming and module development with responsive design principles.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "/development",
   },
 ];
 
@@ -173,29 +175,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Senior SDET | Personify Health",
+    desc: "Lead QA initiatives for Angular microfrontend projects, develop cross-platform automation, and manage comprehensive QA processes.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Automation Specialist | Personify Health",
+    desc: "Architect automation solutions for web and mobile, implement CI/CD pipelines, and conduct WCAG accessibility testing.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Web Developer | Cape Ann Enterprises",
+    desc: "Developed dynamic websites using HTML5, CSS, JavaScript, Angular, and Drupal. Contributed to project planning and server-side configurations.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Full Stack Developer | Cape Ann Enterprises",
+    desc: "Implemented robust programming capabilities using PHP, SQL, and JavaScript. Applied OOP principles and integrated various libraries.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

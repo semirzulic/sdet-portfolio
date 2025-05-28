@@ -34,6 +34,7 @@ export function Button({
       className={cn(
         // remove h-16 w-40, add  md:col-span-2
         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
+        "cursor-default",
         containerClassName
       )}
       style={{
