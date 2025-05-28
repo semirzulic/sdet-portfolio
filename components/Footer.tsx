@@ -22,8 +22,8 @@ const Footer = () => {
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           As a Senior SDET, I bring advanced automation and quality assurance
-          strategies to enhance your development process. Let's collaborate to
-          ensure your software meets the highest standards of reliability and
+          strategies to enhance your development process. Let&apos;s collaborate
+          to ensure your software meets the highest standards of reliability and
           performance.
         </p>
         <a href="mailto:semirzulic92@gmail.com">
