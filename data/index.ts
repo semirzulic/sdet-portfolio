@@ -2,6 +2,7 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
+  { name: "Process", link: "#approach" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -75,7 +76,7 @@ export const projects = [
   {
     id: 1,
     title: "Cross-Platform Automation Framework",
-    des: "Architected and developed a comprehensive automation solution for web and mobile applications, significantly improving testing efficiency and coverage.",
+    des: "Significantly improving testing efficiency and coverage.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/automation-framework",
@@ -98,8 +99,8 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Dynamic Drupal, Angular, NextJS and VueJS Websites",
-    des: "Developed and maintained dynamic websites using Drupal 7 & 8, Angular, NextJS and VueJS focusing on custom theming and module development with responsive design principles.",
+    title: "Mobile Testing",
+    des: "Implement and manage comprehensive QA processes.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/development",
@@ -109,33 +110,40 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "A major focus for Semir this year was automation, where he worked extensively on both writing new tests and debugging existing ones to improve reliability. His contributions helped maintain high automation passing rates and supported other teams in ensuring stable and efficient test execution. This work aligned well with the organization’s broader goal of strengthening automation frameworks and optimizing testing processes.",
+    name: "Esmir Hodzic",
+    title:
+      "Engineering Manager at Personify Health | Leading Web, SSO & Localization Teams | Scaling Platforms for Global Reach",
+    image: "/esko.jpeg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "One of Semir’s key achievements was his role in the Client Shell Application upgrade. His proactive approach to testing and bug identification before production release was instrumental in ensuring a smooth transition. By maintaining clear communication with cross-functional teams, he facilitated efficient sign-offs and releases, preventing potential disruptions and reinforcing his reliability in critical projects.",
+    name: "Hajrija Selimovic",
+    title: "Sr. Manager, Engineering at Personify Health",
+    image: "/hajra.png",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Beyond technical execution, Semir has contributed to improving operational efficiency by taking ownership of testing and verification tasks across multiple projects. His proactive communication with development teams helped prevent bottlenecks and supported faster delivery cycles, resulting in smoother project execution.",
+    name: "Edin Omeragic",
+    title: "Tech Lead Software Engineer at Personify Health",
+    image: "/edo.jpeg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Semir’s performance has been strong, with consistent contributions to key projects, automation improvements, and professional development. He has played an important role in maintaining and enhancing automation coverage while demonstrating a solid work ethic and a commitment to continuous learning. His efforts have directly contributed to the team’s success and the overall health of automation suites across the organization.",
+    name: "Nedim Pasalic",
+    title:
+      "Engineering Leader at Cape Ann Enterprises| Delivery Manager | Client Partnership | Full-Stack Product Strategy",
+    image: "/pasha.jpeg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Semir has consistently met expectations by delivering on key projects, strengthening automation frameworks, and advancing his technical expertise. His continued focus on test strategy, AI-driven automation, and accessibility will further enhance his impact and support both his individual growth and the team’s long-term success.",
+    name: "Edin Murselovic",
+    title: "Software Engineer and Project Manager at Cape Ann Enterprises",
+    image: "/mursel.jpeg",
   },
 ];
 
@@ -207,13 +215,13 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/semirzulic",
+    alt: "GitHub",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/semir-zulic-342188288/",
+    alt: "LinkedIn",
   },
 ];

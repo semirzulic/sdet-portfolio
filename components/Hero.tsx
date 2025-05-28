@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { scrollToElement } from "@/utils/scrollUtils";
 
 const Hero = () => {
   return (
@@ -62,7 +63,12 @@ const Hero = () => {
             Bosnia and Herzegovina.
           </p>
 
-          <a href="#about">
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToElement("about");
+            }}
+          >
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
