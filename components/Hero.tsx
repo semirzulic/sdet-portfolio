@@ -1,4 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import Image from "next/image";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -47,15 +48,36 @@ const Hero = () => {
             Ensuring Software Quality Through Advanced Testing
           </p>
 
-          {/**
-           *  Link: https://ui.aceternity.com/components/text-generate-effect
-           *
-           *  change md:text-6xl, add more responsive code
-           */}
-          <TextGenerateEffect
-            words="Elevating Software Quality with Innovative Test Automation"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          {/* Hero Section with Background Image and Overlay Text */}
+          <div className="relative w-full max-w-4xl mx-auto my-12 lg:my-16">
+            {/* Background Image */}
+            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden">
+              <Image
+                src="/myimage.jpeg"
+                alt="Semir - Senior Software Development Engineer in Test"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+              {/* Dark overlay for better text readability */}
+              <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+
+              {/* Gradient overlay for enhanced text visibility */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/30 rounded-2xl"></div>
+            </div>
+
+            {/* Overlay Text */}
+            <div className="absolute inset-0 flex items-center justify-center px-6">
+              <TextGenerateEffect
+                words="Elevating Software Quality with Innovative Test Automation"
+                className="text-center text-white text-[28px] md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight drop-shadow-2xl"
+              />
+            </div>
+
+            {/* Subtle border and glow effects */}
+            <div className="absolute inset-0 rounded-2xl border-4 border-purple-500/20 shadow-2xl hover:border-purple-500/40 hover:shadow-purple-500/20 transition-all duration-500"></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-500/10 to-blue-500/10 opacity-0 hover:opacity-100 transition-opacity duration-500 blur-xl -z-10"></div>
+          </div>
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Semir, a Senior Software Development Engineer in Test
