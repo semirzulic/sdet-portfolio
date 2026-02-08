@@ -1,3 +1,5 @@
+"use client";
+
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
 
@@ -5,8 +7,10 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { scrollToElement } from "@/utils/scrollUtils";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <div className="pb-20 pt-36">
       {/**
@@ -45,7 +49,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Ensuring Software Quality Through Advanced Testing
+            {t("hero.tagline")}
           </p>
 
           {/* Hero Section with Background Image and Overlay Text */}
@@ -69,7 +73,7 @@ const Hero = () => {
             {/* Overlay Text */}
             <div className="absolute inset-0 flex items-center justify-center px-6">
               <TextGenerateEffect
-                words="Elevating Software Quality with Innovative Test Automation"
+                words={t("hero.headline")}
                 className="text-center text-white text-[28px] md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight drop-shadow-2xl"
               />
             </div>
@@ -80,9 +84,7 @@ const Hero = () => {
           </div>
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Semir, a Senior Software Development Engineer in Test
-            specializing in test automation and quality assurance, based in
-            Bosnia and Herzegovina.
+            {t("hero.bio")}
           </p>
 
           <a
@@ -92,7 +94,7 @@ const Hero = () => {
             }}
           >
             <MagicButton
-              title="Show my work"
+              title={t("hero.cta")}
               icon={<FaLocationArrow />}
               position="right"
             />

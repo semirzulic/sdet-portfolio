@@ -40,7 +40,7 @@ export const gridItems = [
   {
     id: 4,
     title:
-      "Quality assurance enthusiast with a passion for automating excellence.",
+      "Quality assurance enthusiast & modern web developer crafting digital excellence.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -62,7 +62,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Ready to build your next website or QA solution?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -184,28 +184,28 @@ export const workExperience = [
   {
     id: 1,
     title: "Senior SDET | Personify Health",
-    desc: "Lead QA initiatives for Angular microfrontend projects, develop cross-platform automation, and manage comprehensive QA processes.",
+    desc: "Lead QA initiatives for Angular microfrontend projects, develop cross-platform automation, and build modern web solutions.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Automation Specialist | Personify Health",
-    desc: "Architect automation solutions for web and mobile, implement CI/CD pipelines, and conduct WCAG accessibility testing.",
+    desc: "Architect automation solutions for web and mobile, implement CI/CD pipelines, and develop accessible web applications.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Web Developer | Cape Ann Enterprises",
-    desc: "Developed dynamic websites using HTML5, CSS, JavaScript, Angular, and Drupal. Contributed to project planning and server-side configurations.",
+    desc: "Built modern, responsive websites using HTML5, CSS, JavaScript, Angular, and Drupal. Delivered custom web solutions for businesses.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
     title: "Full Stack Developer | Cape Ann Enterprises",
-    desc: "Implemented robust programming capabilities using PHP, SQL, and JavaScript. Applied OOP principles and integrated various libraries.",
+    desc: "Developed full-stack web applications using PHP, SQL, and JavaScript. Created scalable solutions for diverse business needs.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

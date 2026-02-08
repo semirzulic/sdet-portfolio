@@ -4,13 +4,23 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Clients = () => {
+  const { t } = useLanguage();
+
+  const translatedTestimonials = testimonials.map((testimonial, index) => ({
+    ...testimonial,
+    quote: t(`testimonials.t${index + 1}Quote`),
+    name: t(`testimonials.t${index + 1}Name`),
+    title: t(`testimonials.t${index + 1}Title`),
+  }));
+
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from satisfied
-        <span className="text-purple"> coworkers/managers</span>
+        {t("clients.heading")}
+        <span className="text-purple"> {t("clients.headingHighlight")}</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
@@ -19,7 +29,7 @@ const Clients = () => {
           className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
         >
           <InfiniteMovingCards
-            items={testimonials}
+            items={translatedTestimonials}
             direction="right"
             speed="slow"
           />

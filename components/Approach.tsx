@@ -1,21 +1,27 @@
+"use client";
+
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Approach = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="approach" className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        {t("approach.heading")}{" "}
+        <span className="text-purple">{t("approach.headingHighlight")}</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Test Strategy"
+          title={t("approach.phase1Title")}
           icon={<AceternityIcon order="Phase 1" />}
-          des="I develop comprehensive test strategies aligned with project goals. This includes defining test scope, identifying risks, selecting appropriate testing techniques, and creating detailed test plans to ensure thorough coverage."
+          des={t("approach.phase1Desc")}
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,9 +30,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Test Automation Framework"
+          title={t("approach.phase2Title")}
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I design and implement robust test automation frameworks using industry-best practices. This involves selecting the right tools, creating reusable components, and setting up CI/CD pipelines for continuous testing and feedback."
+          des={t("approach.phase2Desc")}
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -44,9 +50,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Quality Assurance & Delivery"
+          title={t("approach.phase3Title")}
           icon={<AceternityIcon order="Phase 3" />}
-          des="I lead the execution of test cases, analyze results, and provide detailed reports. I collaborate with developers to resolve issues, conduct performance testing, and ensure the delivery of high-quality software that meets all requirements and standards."
+          des={t("approach.phase3Desc")}
         >
           <CanvasRevealEffect
             animationSpeed={3}

@@ -1,9 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import ContactModal from "./ContactModal";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -15,28 +23,31 @@ const Footer = () => {
         />
       </div>
 
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Elevate your <span className="text-purple">software quality</span>{" "}
-          with expert testing solutions
+          {t("footer.heading")}{" "}
+          <span className="text-purple">{t("footer.headingHighlight")}</span>{" "}
+          {t("footer.headingSuffix")}
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          As a Senior SDET, I bring advanced automation and quality assurance
-          strategies to enhance your development process. Let&apos;s collaborate
-          to ensure your software meets the highest standards of reliability and
-          performance.
+          {t("footer.description")}
         </p>
-        <a href="mailto:semirzulic92@gmail.com">
+        <div onClick={() => setIsModalOpen(true)} className="cursor-pointer">
           <MagicButton
-            title="Let's get in touch"
+            title={t("footer.cta")}
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2025 Semir Zulic
+          {t("footer.copyright")}
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

@@ -1,11 +1,22 @@
+"use client";
+
 import React from "react";
 
 import { workExperience } from "@/data";
 import { FaDownload } from "react-icons/fa";
 import { Button } from "./ui/MovingBorders";
 import MagicButton from "./MagicButton";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Experience = () => {
+  const { t } = useLanguage();
+
+  const translatedWorkExperience = workExperience.map((exp, index) => ({
+    ...exp,
+    title: t(`experience.exp${index + 1}Title`),
+    desc: t(`experience.exp${index + 1}Desc`),
+  }));
+
   const handleDownload = () => {
     // Replace '/path-to-your-cv.pdf' with the actual path to your CV
     const link = document.createElement("a");
@@ -19,11 +30,12 @@ const Experience = () => {
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        {t("experience.heading")}{" "}
+        <span className="text-purple">{t("experience.headingHighlight")}</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
+        {translatedWorkExperience.map((card) => (
           <Button
             key={card.id}
             //   random duration will be fun , I think , may be not
@@ -60,13 +72,10 @@ const Experience = () => {
         ))}
         <div className="lg:col-span-4 flex flex-col items-center mt-16">
           <p className="text-center text-white text-lg mb-6">
-            Want to know more about my professional journey and skills?
-            <br />
-            Download my comprehensive CV for a detailed look at my experience
-            and qualifications.
+            {t("experience.cvDescription")}
           </p>
           <MagicButton
-            title="Download My CV"
+            title={t("experience.cvButton")}
             icon={<FaDownload />}
             position="left"
             handleClick={handleDownload}
