@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { scrollToElement } from "@/utils/scrollUtils";
 import {
   motion,
   AnimatePresence,
@@ -58,8 +57,26 @@ export const FloatingNav = ({
 
   const handleNavClick = (link: string) => {
     const elementId = link.replace("#", "");
-    scrollToElement(elementId);
-    setMobileMenuOpen(false);
+    const element = document.getElementById(elementId);
+
+    if (element) {
+      // Close mobile menu first
+      setMobileMenuOpen(false);
+
+      // Small delay to allow menu to close before scrolling
+      setTimeout(() => {
+        const navbarHeight = 100;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - navbarHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 100);
+    } else {
+      setMobileMenuOpen(false);
+    }
   };
 
   return (
