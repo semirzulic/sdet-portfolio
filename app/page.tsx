@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { navItems } from "@/data";
+import Pricing from "@/components/Pricing";
 
 const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
 const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
@@ -16,7 +17,7 @@ const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
 });
 const FloatingNav = dynamic(
   () => import("@/components/ui/FloatingNavbar").then((mod) => mod.FloatingNav),
-  { ssr: false }
+  { ssr: false },
 );
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
+        <Pricing />
         <Clients />
         <Experience />
         <Approach />
