@@ -10,7 +10,7 @@ export const translations = {
     hero: {
       tagline: 'Quality Assurance & Modern Web Development',
       headline: 'Elevating Software Quality & Building Modern Websites',
-      bio: "Hi! I'm Semir, a Senior Software Development Engineer in Test specializing in test automation, quality assurance, and building modern websites for businesses, based in Bosnia and Herzegovina.",
+      bio: "Hi! I'm Semir, a Senior Software Development Engineer in Test and AI Engineer specializing in test automation, quality assurance, and building modern websites for businesses, based in Bosnia and Herzegovina.",
       cta: 'Show my work',
     },
     grid: {
@@ -265,7 +265,7 @@ export const translations = {
     hero: {
       tagline: 'Osiguranje kvaliteta & Moderna web razvojna rješenja',
       headline: 'Podižem kvalitet softvera & Gradim moderne web stranice',
-      bio: 'Zdravo! Ja sam Semir, Senior Software Development Engineer in Test specijaliziran za automatizaciju testiranja, osiguranje kvaliteta i izgradnju modernih web stranica za firme, sa sjedištem u Bosni i Hercegovini.',
+      bio: 'Zdravo! Ja sam Semir, Senior Software Development Engineer in Test i AI inženjer specijaliziran za automatizaciju testiranja, osiguranje kvaliteta i izgradnju modernih web stranica za firme, sa sjedištem u Bosni i Hercegovini.',
       cta: 'Pogledaj moj rad',
     },
     grid: {
@@ -521,7 +521,7 @@ export const translations = {
     hero: {
       tagline: 'Qualitätssicherung & Moderne Webentwicklung',
       headline: 'Softwarequalität steigern & Moderne Websites entwickeln',
-      bio: 'Hallo! Ich bin Semir, ein Senior Software Development Engineer in Test, spezialisiert auf Testautomatisierung, Qualitätssicherung und die Entwicklung moderner Websites für Unternehmen, mit Sitz in Bosnien und Herzegowina.',
+      bio: 'Hallo! Ich bin Semir, ein Senior Software Development Engineer in Test und KI-Ingenieur, spezialisiert auf Testautomatisierung, Qualitätssicherung und die Entwicklung moderner Websites für Unternehmen, mit Sitz in Bosnien und Herzegowina.',
       cta: 'Meine Arbeit zeigen',
     },
     grid: {
