@@ -1,24 +1,26 @@
-"use client";
+'use client'
 
-import dynamic from "next/dynamic";
-import { navItems } from "@/data";
-import Pricing from "@/components/Pricing";
+import dynamic from 'next/dynamic'
+import { navItems } from '@/data'
 
-const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
-const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
-const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
-const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
-const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
-const Experience = dynamic(() => import("@/components/Experience"), {
+const Hero = dynamic(() => import('@/components/Hero'), { ssr: false })
+const Grid = dynamic(() => import('@/components/Grid'), { ssr: false })
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
+const Clients = dynamic(() => import('@/components/Clients'), { ssr: false })
+const Approach = dynamic(() => import('@/components/Approach'), { ssr: false })
+const Experience = dynamic(() => import('@/components/Experience'), {
   ssr: false,
-});
-const RecentProjects = dynamic(() => import("@/components/RecentProjects"), {
+})
+const RecentProjects = dynamic(() => import('@/components/RecentProjects'), {
   ssr: false,
-});
+})
+const Pricing = dynamic(() => import('@/components/Pricing'), {
+  ssr: false,
+})
 const FloatingNav = dynamic(
-  () => import("@/components/ui/FloatingNavbar").then((mod) => mod.FloatingNav),
-  { ssr: false },
-);
+  () => import('@/components/ui/FloatingNavbar').then((mod) => mod.FloatingNav),
+  { ssr: false }
+)
 
 const Home = () => {
   return (
@@ -35,7 +37,7 @@ const Home = () => {
         <Footer />
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
